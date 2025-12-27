@@ -1,4 +1,4 @@
-html{
+html {
   justify-content: center;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -6,12 +6,17 @@ html{
 
 body {
   margin: 0;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   width: 100%;
   overflow-x: hidden;
 }
 
-a, button, input, textarea, img, .icon {
+a,
+button,
+input,
+textarea,
+img,
+.icon {
   transition: all 0.3s ease;
 }
 
@@ -20,15 +25,15 @@ img {
   height: auto;
 }
 
-a img:hover{
+a img:hover {
   transform: scale(1.05);
 }
 
-main{
+main {
   margin: 0 auto;
   box-sizing: border-box;
 
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   max-width: 1260px;
   padding-left: 9%;
   padding-right: 9%;
@@ -39,36 +44,36 @@ main{
 }
 
 .icon {
-display: block;
-height: 32px;
-width: 32px;
+  display: block;
+  height: 32px;
+  width: 32px;
 
-&--phone {
-  background-image: url(/src/images/Icon-Phone-call.png)
+  &--phone {
+    background-image: url(/src/images/Icon-Phone-call.png);
+  }
+
+  &--menu {
+    background-image: url(/src/images/Icon-Burger-menu.png);
+  }
+
+  &--close {
+    background-image: url(/src/images/Buttons.png);
+  }
 }
 
-&--menu {
-  background-image: url(/src/images/Icon-Burger-menu.png);
-}
-
-&--close{
-  background-image: url(/src/images/Buttons.png);
-}
-}
-
-.header{
+.header {
   background-image: url(/src/images/background.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
   padding: 36px 9%;
 
-    &__top {
+  &__top {
     display: flex;
     justify-content: space-between;
   }
 
-    &__bottom {
+  &__bottom {
     color: #fff;
     display: flex;
     padding-top: 428px;
@@ -87,17 +92,16 @@ width: 32px;
   }
 }
 
-.menu{
+.menu {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  background-color: #C2C2C2;
+  background-color: #c2c2c2;
   box-sizing: border-box;
   z-index: 100;
   padding: 36px 9%;
-
 
   transform: translateX(100%); /* Сховати меню праворуч */
   transition: transform 0.5s ease;
@@ -105,7 +109,6 @@ width: 32px;
 
   font-weight: 700;
   text-transform: uppercase;
-
 }
 
 .menu:target {
@@ -121,8 +124,8 @@ body:has(.menu:target) {
   justify-content: space-between;
   align-items: center;
 }
-.nav{
-  &__list{
+.nav {
+  &__list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -131,41 +134,38 @@ body:has(.menu:target) {
     gap: 32px;
     margin-bottom: 40px;
     margin-top: 60px;
-
   }
 
-  &__link{
+  &__link {
     font-size: 22px;
     line-height: 22px;
-    color: #1D1D1D;
+    color: #1d1d1d;
     text-decoration: none;
   }
 
-  &__link:hover{
-    border-bottom: 1px solid #1D1D1D;
+  &__link:hover {
+    border-bottom: 1px solid #1d1d1d;
   }
-  &__bottom{
+  &__bottom {
     display: flex;
     flex-direction: column;
     gap: 16px;
-
   }
-  &__bottomT-1{
-    color: #1D1D1D;
+  &__bottomT-1 {
+    color: #1d1d1d;
     text-decoration: none;
     font-size: 16px;
   }
-  &__bottomT-2{
-    color: #1D1D1D;
+  &__bottomT-2 {
+    color: #1d1d1d;
     text-decoration: none;
     font-size: 12px;
-    border-bottom: 1px solid #1D1D1D;
+    border-bottom: 1px solid #1d1d1d;
     width: fit-content;
-
   }
 }
 
-.moveBlock{
+.moveBlock {
   display: flex;
   font-weight: 500;
   justify-content: space-between;
@@ -176,19 +176,19 @@ body:has(.menu:target) {
   color: #fff;
   flex-wrap: wrap;
 
-  &__move{
+  &__move {
     display: flex;
     font-size: 64px;
     font-weight: 500;
   }
-  &__text{
+  &__text {
     font-size: 23px;
     font-weight: 500;
     width: 498px;
   }
 }
 
-.compareBikes{
+.compareBikes {
   margin-top: 164px;
   margin-bottom: 144px;
   color: #fff;
@@ -209,22 +209,22 @@ body:has(.menu:target) {
   flex-wrap: wrap;
 }
 
-.bike1{
+.bike1 {
   width: 324px;
 
-   &__img {
+  &__img {
     object-fit: contain;
     display: block;
     height: 256px;
     width: 324px;
   }
-    &__title {
+  &__title {
     display: block;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 8px;
   }
-   &__text {
+  &__text {
     margin-bottom: 16px;
   }
 }
@@ -237,10 +237,9 @@ body:has(.menu:target) {
     display: block;
     height: 256px;
     width: 324px;
-
   }
-   &__img:hover{
-    transform: scale(1.05)
+  &__img:hover {
+    transform: scale(1.05);
   }
 
   &__title {
@@ -248,7 +247,6 @@ body:has(.menu:target) {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 8px;
-
   }
 
   &__text {
@@ -264,10 +262,9 @@ body:has(.menu:target) {
     display: block;
     height: 256px;
     width: 324px;
-
   }
-   &__img:hover{
-    transform: scale(1.05)
+  &__img:hover {
+    transform: scale(1.05);
   }
 
   &__title {
@@ -275,7 +272,6 @@ body:has(.menu:target) {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 8px;
-
   }
 
   &__text {
@@ -283,26 +279,26 @@ body:has(.menu:target) {
   }
 }
 
-.details{
+.details {
   margin-bottom: 180px;
   max-width: 1260px;
   // padding-inline: 9%;
 }
 
-.detailsTitle{
-    display: flex;
-    color: #fff;
-    font-size: 64px;
-    font-weight: 500;
-    justify-content: center;
+.detailsTitle {
+  display: flex;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 500;
+  justify-content: center;
 }
 
-.firstTitle{
+.firstTitle {
   display: block;
   gap: 24px;
   justify-content: center;
 
-  &__imgBlock{
+  &__imgBlock {
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -316,7 +312,7 @@ body:has(.menu:target) {
     width: 324px;
   }
 
-   &__title {
+  &__title {
     color: #fff;
     font-weight: 700;
     font-size: 24px;
@@ -334,12 +330,12 @@ body:has(.menu:target) {
   }
 }
 
-.secondTitle{
+.secondTitle {
   display: block;
   gap: 24px;
   justify-content: center;
 
-  &__imgBlock{
+  &__imgBlock {
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -353,7 +349,7 @@ body:has(.menu:target) {
     width: 324px;
   }
 
-   &__title {
+  &__title {
     color: #fff;
     font-weight: 700;
     font-size: 24px;
@@ -382,7 +378,7 @@ body:has(.menu:target) {
     justify-content: center;
   }
 
-   &__img1{
+  &__img1 {
     height: 320px;
     width: 324px;
   }
@@ -407,7 +403,6 @@ body:has(.menu:target) {
     display: flex;
     padding-bottom: 48px;
     width: 672px;
-
   }
 }
 
@@ -424,7 +419,6 @@ body:has(.menu:target) {
   &__text {
     font-size: 16px;
     font-weight: 700;
-
   }
 }
 
@@ -451,7 +445,6 @@ body:has(.menu:target) {
   &__left {
     display: flex;
     flex-direction: column;
-
   }
 
   &__name-input {
@@ -463,7 +456,6 @@ body:has(.menu:target) {
     margin-bottom: 16px;
     padding: 14px 352px 14px 16px;
   }
-
 
   &__email-input {
     box-sizing: border-box;
@@ -496,88 +488,92 @@ body:has(.menu:target) {
     align-items: center;
     font-size: 16px;
     font-weight: 700;
-    color: #1D1D1D;
+    color: #1d1d1d;
     margin-bottom: 180px;
   }
 }
 
 .contacts {
-    &__phone {
-      font-size: 14px;
-      font-weight: 400;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-
-
-    &__number {
-      font-size: 16px;
-      font-weight: 500;
-      color: #fff;
-      margin-top: 0;
-      margin-bottom: 24px;
-      text-decoration: none;
-    }
-    &__number:hover {
-
-      color: lightgrey;
-    }
-
-    &__Email {
-      font-size: 14px;
-      font-weight: 400;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-
-    &__text{
-      color: #fff;
-      margin-top: 0;
-      margin-bottom: 24px;
-      text-decoration: none;
-    }
-
-    &__text:hover{
-      color: lightgrey;
-    }
-    &__Adresss{
-      font-size: 14px;
-      font-weight: 400;
-      color: #fff;
-      margin-bottom: 8px;
-      margin-top: 0;
-
-    }
-
-    &__Address {
-      margin-top: 0;
-      font-size: 16px;
-      font-weight: 500;
-      color: #fff;
-      margin-bottom: 24px;
-      text-decoration: none;
-    }
-    &__Address:hover{
-      color: lightgrey;
-    }
-  }
-  .bottom {
-    background-image: url(/src/images/bottom.png);
-    background-size: cover;
-    height: 555px;
-    width: 100%;
-    max-width: 1260px;
-    background-position: center;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-
-    left: 50%;
-    transform: translateX(-50%);
+  &__phone {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 8px;
   }
 
-.bike1, .bike2, .bike3, .explore, .contact__name-input, .contact__email-input, .contact__message-input, .contact__button {
+  &__number {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-decoration: none;
+  }
+  &__number:hover {
+    color: lightgrey;
+  }
+
+  &__Email {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-decoration: none;
+  }
+
+  &__text:hover {
+    color: lightgrey;
+  }
+  &__Adresss {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  &__Address {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 24px;
+    text-decoration: none;
+  }
+  &__Address:hover {
+    color: lightgrey;
+  }
+}
+.bottom {
+  background-image: url(/src/images/bottom.png);
+  background-size: cover;
+  height: 555px;
+  width: 100%;
+  max-width: 1260px;
+  background-position: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bike1,
+.bike2,
+.bike3,
+.explore,
+.contact__name-input,
+.contact__email-input,
+.contact__message-input,
+.contact__button {
   max-width: 100%;
 }
