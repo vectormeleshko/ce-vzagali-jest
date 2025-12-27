@@ -15,6 +15,11 @@ a, button, input, textarea, img, .icon {
   transition: all 0.3s ease;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a img:hover{
   transform: scale(1.05);
 }
@@ -101,9 +106,6 @@ width: 32px;
   font-weight: 700;
   text-transform: uppercase;
 
-  &__book-a-test{
-
-  }
 }
 
 .menu:target {
@@ -146,9 +148,6 @@ body:has(.menu:target) {
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-  }
-  &__bottomT{
 
   }
   &__bottomT-1{
@@ -510,10 +509,6 @@ body:has(.menu:target) {
       margin-bottom: 8px;
     }
 
-    &__number:hover {
-
-      color: lightgrey;
-    }
 
     &__number {
       font-size: 16px;
@@ -522,6 +517,10 @@ body:has(.menu:target) {
       margin-top: 0;
       margin-bottom: 24px;
       text-decoration: none;
+    }
+    &__number:hover {
+
+      color: lightgrey;
     }
 
     &__Email {
@@ -578,11 +577,6 @@ body:has(.menu:target) {
     left: 50%;
     transform: translateX(-50%);
   }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .bike1, .bike2, .bike3, .explore, .contact__name-input, .contact__email-input, .contact__message-input, .contact__button {
   max-width: 100%;
