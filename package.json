@@ -2,10 +2,9 @@
   "name": "layout_landing-page",
   "version": "1.0.0",
   "description": "Landing page",
-  "homepage": "http://layout_landing-page",
+  "homepage": "ce-vzagali-jest",
   "scripts": {
     "init": "mate-scripts init",
-    "start": "parcel ./src/index.html --open",
     "start": "mate-scripts start -l",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
