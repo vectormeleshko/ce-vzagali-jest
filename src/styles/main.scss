@@ -30,17 +30,21 @@ a img:hover {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   box-sizing: border-box;
 
   background-color: #1d1d1d;
-  max-width: 1260px;
-  padding-left: 9%;
-  padding-right: 9%;
+  max-width: 100%;
+  // padding-left: 9%;
+  // padding-right: 9%;
 
   position: relative;
   z-index: 1;
   margin-bottom: 555px;
+
+  align-items: center;
 }
 
 .icon {
@@ -169,10 +173,10 @@ body:has(.menu:target) {
   display: flex;
   font-weight: 500;
   justify-content: space-between;
-  max-width: 933px;
-  // margin-top: 120px;
+  max-width: 100%;
+  margin-top: 120px;
   height: 96px;
-  gap: 24px;
+  gap: 120px;
   color: #fff;
   flex-wrap: wrap;
 
@@ -206,7 +210,7 @@ body:has(.menu:target) {
   display: flex;
   gap: 24px;
   justify-content: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .bike1 {
@@ -555,7 +559,7 @@ body:has(.menu:target) {
   background-size: cover;
   height: 555px;
   width: 100%;
-  max-width: 1260px;
+  max-width: 100%;
   background-position: center;
 
   position: fixed;
